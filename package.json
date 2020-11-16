@@ -1,0 +1,14 @@
+{
+  "name": "training-sls",
+  "version": "1.0.0",
+  "description": "Not so much to tell yet.",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.793.0"
+  }
+}
