@@ -30,8 +30,8 @@ functions:
 
   FinalLambda:
     handler: src/finalLambda.handler
-    environment:
-      AN_ENV_VAR: 'Una variable util'
+    # environment:
+    #   AN_ENV_VAR: 'Una variable util'
     events:
       - sqs:
           arn:

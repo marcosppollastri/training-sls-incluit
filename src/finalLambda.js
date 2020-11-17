@@ -1,5 +1,6 @@
 
 async function handler(event) {
+  console.log(event);
 
   event.Records.map(record => {
     console.log(record);
