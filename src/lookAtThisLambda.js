@@ -6,9 +6,6 @@ async function handler(event) {
   console.log(`This is a local var ${AN_ENV_VAR}`);
   return {
     statusCode: 200,
-    body: {
-      success: true,
-    },
   };
 };
 
