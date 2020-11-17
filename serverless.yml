@@ -8,7 +8,7 @@ provider:
 
 functions:
   LookAtThisLambda:
-    handler: handler.lookAtThisLambda
+    handler: src/lookAtThisLambda.handler
     environment:
       AN_ENV_VAR: 'Una variable util'
     events:

@@ -1,7 +1,7 @@
 
 const AN_ENV_VAR = process.env.AN_ENV_VAR || '';
 
-async function lookAtThisLambda(event) {
+async function handler(event) {
   console.log(`You've called this owesome lambda with this body ${event.body}`);
   console.log(`This is a local var ${AN_ENV_VAR}`);
   return {
@@ -12,4 +12,4 @@ async function lookAtThisLambda(event) {
   };
 };
 
-module.exports = { lookAtThisLambda };
+module.exports = { handler };
