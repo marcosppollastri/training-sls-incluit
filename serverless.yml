@@ -1,27 +1,18 @@
 service: sls-training
 
 provider:
-    name: aws
-    runtime: nodejs12.x
-    stage: dev
-    region: us-east-1
-
-environment:
-    A_GLOBAL_VAR: 'Esta es una variable de entorno global'
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
 
 functions:
-    LookAtThisLambda:
-        handler: handler.lookAtThisLambda
-        events:
-        - http:
-            path: users/create
-            method: get
-        environment:
-            A_LAMBDA_VAR: 'Esta es una variable para esta lambda'
-
-resources:
-  Resources:
-    NewResource:
-      Type: AWS::S3::Bucket
-      Properties:
-        BucketName: my-new-bucket
+  LookAtThisLambda:
+    handler: handler.lookAtThisLambda
+    environment:
+      AN_ENV_VAR: 'Una variable util'
+    events:
+      - http:
+          path: training-sls/first
+          method: post
+          cors: true
